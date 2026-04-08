@@ -26,7 +26,7 @@ print("Test shape:", test_df.shape)
 # -----------------------------
 # Handle missing values
 # -----------------------------
-numerical_cols = train_df.select_dtypes(include=[np.number]).columns.drop("id")
+numerical_cols = train_df.select_dtypes(include=[np.number]).columns.drop(['id', 'diagnosed_diabetes'])
 categorical_cols = train_df.select_dtypes(include=["object"]).columns
 
 for col in numerical_cols:
