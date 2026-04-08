@@ -4,10 +4,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.decomposition import PCA
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 import warnings
+from sklearn.decomposition import PCA
+pca = PCA(n_components=2)
 warnings.filterwarnings('ignore')
 
 # Load data
