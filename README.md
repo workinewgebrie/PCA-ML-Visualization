@@ -8,13 +8,22 @@ The dataset is from Kaggle Playground Series S5E12: Binary Classification with a
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.8-3.12 (avoid 3.14 alpha due to compatibility issues)
 - Libraries: numpy, pandas, scikit-learn, matplotlib, seaborn
 
 Install with:
 ```
 pip install -r requirements.txt
 ```
+
+## Setup
+
+Due to Python 3.14 alpha compatibility issues with numpy, use Python 3.11 or 3.12:
+
+1. Install Python 3.11 from https://www.python.org/downloads/
+2. Create venv: `python -m venv venv`
+3. Activate: `.\venv\Scripts\activate`
+4. Install packages: `pip install -r requirements.txt`
 
 ## Usage
 
